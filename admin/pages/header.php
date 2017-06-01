@@ -5,27 +5,22 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- DataTables -->
-  <link rel="stylesheet" href="plugins/datatables/dataTables.bootstrap.css">
+  <link rel="stylesheet" href="/admin/plugins/datatables/dataTables.bootstrap.css">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/admin/bootstrap/css/bootstrap.min.css">
   <!-- DataTables -->
-  <link rel="stylesheet" href="plugins/datatables/dataTables.bootstrap.css">
+  <link rel="stylesheet" href="/admin/plugins/datatables/dataTables.bootstrap.css">
   <!-- CKEditor -->
-  <script src="plugins/ckeditor/ckeditor.js"></script>
+  <script src="/admin/plugins/ckeditor/ckeditor.js"></script>
   <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="/admin/dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="/admin/dist/css/skins/_all-skins.min.css">
   <!-- bootstrap wysihtml5 - text editor -->
-  <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
-  <!-- file input -->
-  <script src="plugins/fileinput/js/plugins/canvas-to-blob.min.js" type="text/javascript"></script>  
-  <script src="plugins/fileinput/js/plugins/sortable.min.js" type="text/javascript"></script>  
-  <script src="plugins/fileinput/js/plugins/purify.min.js" type="text/javascript"></script>
-  <script src="plugins/fileinput/js/fileinput.min.js"></script>
+  <link rel="stylesheet" href="/admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,16 +29,32 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 <!-- jQuery UI 1.11.4 -->
-<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- <script src="/admin/plugins/jQuery/jquery-2.2.3.min.js"></script> -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="https://momentjs.com/downloads/moment.js"></script>
 <!-- Bootstrap 3.3.6 -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="/admin/bootstrap/js/bootstrap.min.js"></script>
+<!-- DateRangePicker -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.25/daterangepicker.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.25/daterangepicker.js"></script>
+
 <!-- DataTables -->
-<script src="plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="plugins/datatables/dataTables.bootstrap.min.js"></script>
+<script src="/admin/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="/admin/plugins/datatables/dataTables.bootstrap.min.js"></script>
 <!-- AdminLTE App -->
-<script src="dist/js/app.min.js"></script>
+<script src="/admin/dist/js/app.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="dist/js/demo.js"></script>
+<script src="/admin/dist/js/demo.js"></script>
+
+<!-- file input -->
+<script src="/admin/plugins/fileinput/js/plugins/canvas-to-blob.min.js" type="text/javascript"></script>  
+<script src="/admin/plugins/fileinput/js/plugins/sortable.min.js" type="text/javascript"></script>  
+<script src="/admin/plugins/fileinput/js/plugins/purify.min.js" type="text/javascript"></script>
+<script src="/admin/plugins/fileinput/js/fileinput.min.js"></script>
+
 <!-- page script -->
 <script>
   $(function () {
@@ -66,15 +77,11 @@
 </script>
 <!-- Morris.js charts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-<script src="plugins/morris/morris.min.js"></script>
+<script src="/admin/plugins/morris/morris.min.js"></script>
 <!-- Sparkline -->
-<script src="plugins/sparkline/jquery.sparkline.min.js"></script>
+<!-- <script src="/admin/plugins/sparkline/jquery.sparkline.min.js"></script> -->
 <!-- Bootstrap WYSIHTML5 -->
-<script src="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<script src="/admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="dist/js/pages/dashboard.js"></script>
-
-
-
-
+<script src="/admin/dist/js/pages/dashboard.js"></script>
 </head>

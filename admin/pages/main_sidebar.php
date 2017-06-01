@@ -6,9 +6,9 @@
         <div class="pull-left image">
           <?php
             if($_SESSION['anh'] != ""){
-              $anhdd = 'dist/img/'.$_SESSION['anh'];
+              $anhdd = '/admin/dist/img/'.$_SESSION['anh'];
               if (file_exists($anhdd)) {
-                $new_anhdd = 'dist/img/160x160'.$_SESSION['anh'];
+                $new_anhdd = '/admin/dist/img/160x160'.$_SESSION['anh'];
                 $img_anhdd = new SimpleImage();
                 $img_anhdd->load($anhdd);
                 $img_anhdd->resizeToWidth(160);
