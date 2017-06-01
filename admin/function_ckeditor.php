@@ -6,7 +6,7 @@ function ckeditor($name, $content, $toolbar = 'standard', $language = 'vi', $wid
 	$code = '';
 	if(!$ckeditor_loaded)
 	{
-		$code.= '<script type="text/javascript" src="../../plugins/ckeditor/ckeditor.js"></script>';
+		$code.= '<script type="text/javascript" src="/admin/plugins/ckeditor/ckeditor.js"></script>';
 		$ckeditor_loaded = true;
 	}
  
@@ -18,8 +18,8 @@ config.entities_latin = false;
 config.language = '".$language."';
 config.width = '".$width."';
 config.height = '".$height."';
-config.filebrowserBrowseUrl 		= '../../plugins/ckfinder/ckfinder.html';
-config.filebrowserImageBrowseUrl 	= '../../plugins/ckfinder/ckfinder.html';
+config.filebrowserBrowseUrl 		= '/admin/plugins/ckfinder/ckfinder.html';
+config.filebrowserImageBrowseUrl 	= '/admin/plugins/ckfinder/ckfinder.html';
 ";
  
 	

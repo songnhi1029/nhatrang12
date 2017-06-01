@@ -7,29 +7,29 @@ require('function_ckeditor.php');
 <?php
   if(isset($_GET['logout']) && $_GET['logout']=="logout"){
     session_destroy();
-    header("location:login.php");
+    header("location:/admin/login.php");
   }
   ?>
 <?php
 //Kiem tra da co sesion dang nhap hay chua
   if(!isset($_SESSION['username'])){
   //neu chua dang nhap
-    header("location: login.php");
+    header("location: /admin/login.php");
   }else{
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <?php include('pages/header.php');?>
+  <?php include('./pages/header.php');?>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
   <header class="main-header">
-    <?php include('pages/main_header.php');?>
+    <?php include('./pages/main_header.php');?>
   </header>
   <!-- Left side column. contains the logo and sidebar -->
   <aside class="main-sidebar">
-    <?php include('pages/main_sidebar.php');?>
+    <?php include('./pages/main_sidebar.php');?>
   </aside>
 
   <!-- Content Wrapper. Contains page content -->
@@ -39,22 +39,22 @@ require('function_ckeditor.php');
         $v=$_GET['view'];
         switch ($v) {
           case 'view':
-            include('pages/post/chi-tiet-bai-viet.php');
+            include('./pages/post/chi-tiet-bai-viet.php');
             break;
           case 'editors':
-            include('pages/post/editors.php');
+            include('./pages/post/editors.php');
             break;
           case 'approve':
-            include('pages/post/list-duyet-bai.php');
+            include('./pages/post/list-duyet-bai.php');
             break;
           case 'edit':
-            include('pages/post/sua-bai-viet.php');
+            include('./pages/post/sua-bai-viet.php');
             break;
           case 'editheader':
-            include('pages/setting_header/editheader.php');
+            include('./pages/setting_header/editheader.php');
             break;
           case 'editmenu':
-            include('pages/setting_header/editmenu.php');
+            include('./pages/setting_header/editmenu.php');
             break;
         }
       }else{
@@ -91,7 +91,7 @@ require('function_ckeditor.php');
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
-    <?php include('pages/footer.php');?>
+    <?php include('./pages/footer.php');?>
   </footer>
   <div class="control-sidebar-bg"></div>
 </div>
