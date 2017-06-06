@@ -171,10 +171,35 @@ if(isset($_POST['btn-luu'])){
       $image="";
     }
 
-    $query2 = "INSERT INTO `tintuc` (`anh`, `tieudetin`, `tomtattin`, `noidung`, `ngaydangtin`, `idloaitin`, `iduser`, `keyword`, `duyet`, `noibat`, `thongbao`)
-                              VALUES ('$image', '$tieude', '$tomtat', '$nd', NOW(), '$loaitin', '".$_SESSION['iduser']."', '$key', '$trangthai', '$noibat', '$thongbao')";
+    $query2 = "INSERT INTO tintuc (
+                anh, 
+                tieudetin, 
+                tomtattin, 
+                noidung, 
+                ngaydangtin, 
+                idloaitin, 
+                iduser, 
+                keyword, 
+                duyet, 
+                noibat, 
+                thongbao
+              )
+              VALUES (
+                '$image', 
+                '$tieude', 
+                '$tomtat', 
+                '$nd', 
+                NOW(), 
+                '$loaitin', 
+                '".$_SESSION['iduser']."', 
+                '$key', 
+                '$trangthai', 
+                '$noibat', 
+                '$thongbao'
+              )";
     //echo $query2;
     if (mysqli_query($conn, $query2)){
+      echo "<script>console.log(". json_encode([$conn, $query2, mysqli_query($conn, $query2)]).");</script>";  
       echo "<script>alert('Thêm thành công!');</script>";
     }
     else{
