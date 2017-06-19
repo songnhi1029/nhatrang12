@@ -230,7 +230,7 @@ if(isset($_POST['btn-luu'])){
         echo "<script>alert('Sửa thành công!');</script>";
     }
     else{
-      //echo "Error updating record: " . $query2. ", ".mysqli_error($conn);
+      echo "Error updating record: " . $query2. ", ".mysqli_error($conn);
     }
     
 }
