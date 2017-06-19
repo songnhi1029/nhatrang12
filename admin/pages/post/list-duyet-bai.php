@@ -138,9 +138,9 @@ if(isset($_GET['lenh'], $_GET['id']) && $_GET['id'] != ""){
                         $alt="";
                         $new_name = "";
                         if($rows[1] != ""){
-                          $name = 'dist/img/images-post/'.$rows[1];
+                          $name = './dist/img/images-post/'.$rows[1];
                           if (file_exists($name)) {
-                            $new_name = 'dist/img/images-post/100x100'.$rows[1];
+                            $new_name = './dist/img/images-post/100x100'.$rows[1];
                             $img = new SimpleImage();
                             $img->load($name);
                             $img->resizeToWidth(100);
